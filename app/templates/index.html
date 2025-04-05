@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wildlife Sightings Visualizer</title>
+</head>
+<body>
+    <h1>Wildlife Sightings Visualizer</h1>
+    <!-- sends a post request to the map after searching for a species name -->
+    <form action="/map" method="post">
+        <label for="species">Enter a species name:</label>
+        <input type="text" id="species" name="species" placeholder="e.g. Panthera leo" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
