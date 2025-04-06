@@ -1,11 +1,10 @@
 from flask import Blueprint, make_response, jsonify, render_template, request, redirect, url_for, flash
-from .controller import MainController
-from app.sightings import get_observations
+from .controller import autocomplete_species #for the search bar
+from app.sightings import get_observations #the main iNaturalist API call function is here
 import folium #for maps
 
 
 main = Blueprint('main', __name__, template_folder='templates') #just to make sure its getting the right template folder
-main_controller = MainController()
 
 #the route for the map as a post request
 @main.route('/', methods=['GET'])
@@ -16,16 +15,14 @@ def index():
 @main.route('/map', methods=['POST'])
 def show_map():
     species = request.form.get("species")
-    # use sightings.py to get observations from iNaturalist API call (not done yhet)
+    # use sightings.py to get observations from iNaturalist API call
     # generate the folium map and return it
 
     if not species: #if there isn't a species provided
         return "No species provided.", 400
     
-    #get the sightings of the entered species
-    observations = get_observations(species)
-    #if no sightings found
-    if not observations:
+    observations = get_observations(species) #get the sightings of the entered species
+    if not observations: #if no sightings found
         return f"No sightings found for '{species}'", 404
 
     #start folium map centered on the first observation
@@ -44,5 +41,11 @@ def show_map():
 
     #save the map to an HTML file so you can pull it up in web app
     m.save("app/static/folium_map.html")
-
     return render_template("map.html", species = species)
+
+#route for the controller that autocompletes search queries
+@main.route("/autocomplete", methods=["GET"])
+def autocomplete():
+    query = request.args.get("q", "")
+    suggestions = autocomplete_species(query)
+    return jsonify(suggestions)

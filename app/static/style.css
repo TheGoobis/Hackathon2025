@@ -1,0 +1,185 @@
+/* For extending or overwriting Bootstrap default stylings!! */
+
+/* Autocomplete styling */
+#autocomplete-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+}
+#autocomplete-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+#autocomplete-list li:hover {
+    background-color: #f0f0f0;
+}
+/* Styling for tabs when I get to it */
+.nav-tabs .nav-links.active{
+    margin-top:50px;
+    font-size:15px;
+    padding:0px;
+    list-style:none;
+    background:#fff;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+    display:inline-block;
+    border-radius:50px;
+    position:relative;
+}
+
+/* Other stylings */
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+   }
+
+header {
+   text-align: center;
+   padding: 20px;
+   background-color: #1c2541;
+   border-bottom: 5px solid #4f9da6;
+}
+
+h1 {
+    text-align: center;
+   }
+       button 
+     {
+       display: block;
+       width: 100%;
+       margin: 10px 0;
+       padding: 10px;
+       font-size: 16px;
+       cursor: pointer;
+       border: none;
+       border-radius: 4px;
+       background: #007BFF;
+       color: white;
+       transition: background 0.3s;
+      }
+
+
+
+h2 {
+   font-size: 2em;
+   color: #4f9da6;
+   border-bottom: 2px solid #4f9da6;
+   margin-bottom: 10px;
+   padding-bottom: 5px;
+}
+
+p1 {
+   font-size: 12.2em;
+   line-height: 1.6;
+   margin: 10px 20px;
+}
+
+footer {
+   text-align: center;
+   padding: 10px;
+   background-color: #1c2541;
+   color: #ffffff;
+   font-size: 0.9em;
+   border-top: 5px solid #4f9da6;
+}
+
+.image-left {
+   float: left;
+   margin: 10px 20px 10px 0;
+   border: 2px dotted black;
+   max-width: 40%;
+}
+
+.section-background {
+   background-color: #162447;
+   padding: 20px;
+   margin: 10px;
+   border: 1px solid #4f9da6;
+   border-radius: 10px;
+}
+
+.button {
+   display: inline-block;
+   padding: 10px 20px;
+   margin: 10px 0;
+   color: #ffffff;
+   background-color: #4f9da6;
+   text-decoration: none;
+   border-radius: 5px;
+   font-size: 1em;
+   text-align: center;
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+   background-color: #ff7f50;
+   box-shadow: 0 0 20px rgba(255, 127, 80, 0.8);
+}
+
+.clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.hardware-item {
+   display: flex;
+   align-items: flex-start;
+   margin-bottom: 20px;
+}
+
+.hardware-img {
+   max-width: 150px;
+   margin-right: 15px;
+   border: 2px solid #ffffff;
+   border-radius: 5px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hardware-img:hover {
+   transform: scale(1.6);
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.image {
+   max-width: 150px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+}
+
+.hardware-item div {
+   flex-grow: 1;
+}
+
+strong {
+   color: #ff7f50;
+}
+
+em {
+   color: #4f9da6;
+   font-style: italic;
+}
+
+/* ul {
+   list-style-type: disc;
+   margin: 15px 20px;
+   padding-left: 20px;
+   font-size: 1.2em; 
+   line-height: 1.8;
+}
+
+ul li {
+   margin-bottom: 10px;
+   transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+ul li:hover {
+   color: #ff7f50;
+   text-shadow: 0 0 5px rgba(255, 127, 80, 0.8); 
+}  */
+
+
+
