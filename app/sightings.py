@@ -32,27 +32,23 @@ def get_observations(species_name, per_page = 50):
         date = item["observed_on"] or "Unknown"
         photo = item["photos"][0]["url"].replace("square", "medium") if item["photos"] else None
 
-        #get type of search (plant, animal, fungi, whatever) to change folium map icon
+        #get type of search (plant, animal, fungi, whatever) to change folium map icon!!
         icon_type = "camera"  #the default icon if this doesn't work for whatever reason
         if "taxon" in item and "iconic_taxon_name" in item["taxon"]: #taxon is scientific name for species i think (its what iNaturalist uses)
-            group = item["taxon"]["iconic_taxon_name"]
-            if group == "Plantae":
-                icon_type = "leaf"
-                icon_color = "green"
-            elif group == "Fungi":
-                icon_type = "mound"
-                icon_color = "orange"
-            elif group == "Insecta":
-                icon_type = "bugs"
-                icon_color = "purple"
-            elif group == "Mammalia":
-                icon_type = "paw"
-                icon_color = "blue"
-            elif group == "Arachnida":
-                icon_type = "spider"
-                icon_color = "black"
-            else:
-                icon_color = "red"
+            group = item.get("taxon", {}).get("iconic_taxon_name", "")
+            icon_map = {
+                "Plantae": ("leaf", "green"),
+                "Fungi": ("mound", "orange"),
+                "Insecta": ("bugs", "purple"),
+                "Mammalia": ("paw", "blue"),
+                "Arachnida": ("spider", "black"),
+                "Reptilia": ("worm", "red"),
+                "Amphibia": ("frog", "darkgreen"),
+                "Actinopterygii": ("fish-fins", "beige"),
+                "Aves": ("dove", "gray")
+            }
+            #use defaults if group not found
+            icon_type, icon_color = icon_map.get(group, ("camera", "white"))
 
         #used to build map. Is sent to route.py /map route
         observations.append({
