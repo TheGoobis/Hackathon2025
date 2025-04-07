@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Orbitron|Raleway');
 /* For extending or overwriting Bootstrap default stylings!! */
 
 /* Autocomplete styling */
@@ -15,52 +16,92 @@
 #autocomplete-list li:hover {
     background-color: #f0f0f0;
 }
-/* Styling for tabs when I get to it */
-.nav-tabs .nav-links.active{
-    margin-top:50px;
-    font-size:15px;
-    padding:0px;
-    list-style:none;
-    background:#fff;
-    box-shadow:0px 5px 20px rgba(0,0,0,0.1);
-    display:inline-block;
-    border-radius:50px;
-    position:relative;
+
+/* --------- FOR ELASTIC TAB EFFECT ----------- */ /* TAKEN FROM: https://codepen.io/nenadkaevik/pen/odyrGm */
+.tab-pane {
+   display: none;
+}
+.active-tab {
+   display: block !important;
+}
+.tabs {
+   font-size: 15px;
+   padding: 0px;
+   list-style: none;
+   background: #fff;
+   box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+   display: inline-block;
+   border-radius: 50px;
+   position: relative;
+   margin: 0 auto;
+}
+.tabs li {
+   display: inline-block;
+}
+.tabs a {
+   text-decoration: none;
+   color: #777;
+   text-transform: uppercase;
+   padding: 10px 20px;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+   transition-duration: 0.6s;
+}
+.tabs a.active {
+   color: #fff;
+}
+.tabs .selector {
+   height: 100%;
+   display: inline-block;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 0;
+   border-radius: 50px;
+   transition-duration: 0.6s;
+   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+   background: #05abe0;
+   background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+   background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+   background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
 }
 
-/* Other stylings */
-body{
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-   }
+/* -------- OTHER STYLINGS (HEADINGS, BODY, ETC.) ---------- */
+body {
+   background: #f8f9fa;
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+ }
 
 header {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   background: linear-gradient(to right, #05abe0, #8200f4);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
    text-align: center;
-   padding: 20px;
-   background-color: #1c2541;
-   border-bottom: 5px solid #4f9da6;
 }
 
-h1 {
-    text-align: center;
-   }
-       button 
-     {
-       display: block;
-       width: 100%;
-       margin: 10px 0;
-       padding: 10px;
-       font-size: 16px;
-       cursor: pointer;
-       border: none;
-       border-radius: 4px;
-       background: #007BFF;
-       color: white;
-       transition: background 0.3s;
-      }
+.container {
+   background: #ffffff;
+   border-radius: 16px;
+   padding: 30px;
+   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+   margin-top: 40px;
+ }
 
-
+ h1 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #444;
+   text-align: center;
+   margin-bottom: 20px;
+ }
 
 h2 {
    font-size: 2em;
@@ -70,11 +111,11 @@ h2 {
    padding-bottom: 5px;
 }
 
-p1 {
-   font-size: 12.2em;
+/* p {
+   font-size: 1.2em;
    line-height: 1.6;
    margin: 10px 20px;
-}
+} */
 
 footer {
    text-align: center;
@@ -162,24 +203,3 @@ em {
    color: #4f9da6;
    font-style: italic;
 }
-
-/* ul {
-   list-style-type: disc;
-   margin: 15px 20px;
-   padding-left: 20px;
-   font-size: 1.2em; 
-   line-height: 1.8;
-}
-
-ul li {
-   margin-bottom: 10px;
-   transition: background-color 0.3s ease, padding-left 0.3s ease;
-}
-
-ul li:hover {
-   color: #ff7f50;
-   text-shadow: 0 0 5px rgba(255, 127, 80, 0.8); 
-}  */
-
-
-

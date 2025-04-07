@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7179d05157ab88461c2403c7afcacc89 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7179d05157ab88461c2403c7afcacc89" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7179d05157ab88461c2403c7afcacc89 = L.map(
+                "map_7179d05157ab88461c2403c7afcacc89",
+                {
+                    center: [37.7021305299, -122.4837947488],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a71d606fb504ed950b41fcea65c2c063 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a71d606fb504ed950b41fcea65c2c063.addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var marker_42d34b7160dfbfc06c613715e84e9c1f = L.marker(
+                [37.7021305299, -122.4837947488],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_b9cf7adf4eef3d4346414166e547626d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41a85f33fb390f17d5e7d33d518df43b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_258a42999cfdd9be1fd9629e2088782d = $(`<div id="html_258a42999cfdd9be1fd9629e2088782d" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-05</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483297750/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483297750/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_41a85f33fb390f17d5e7d33d518df43b.setContent(html_258a42999cfdd9be1fd9629e2088782d);
+            
+        
+
+        marker_42d34b7160dfbfc06c613715e84e9c1f.bindPopup(popup_41a85f33fb390f17d5e7d33d518df43b)
+        ;
+
+        
+    
+    
+                marker_42d34b7160dfbfc06c613715e84e9c1f.setIcon(icon_b9cf7adf4eef3d4346414166e547626d);
+            
+    
+            var marker_14e6dfc32e4debd90f9fa0f950c3a79d = L.marker(
+                [25.6671354356, -80.4929263223],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_692b68871e52f4d2e973e9076c4fb990 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f48f4c676e37f9df62bf8ae141b9f47 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb040f45c26e6dcc4c0129cf2eb0c6e7 = $(`<div id="html_fb040f45c26e6dcc4c0129cf2eb0c6e7" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-05</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483233660/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483233660/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_4f48f4c676e37f9df62bf8ae141b9f47.setContent(html_fb040f45c26e6dcc4c0129cf2eb0c6e7);
+            
+        
+
+        marker_14e6dfc32e4debd90f9fa0f950c3a79d.bindPopup(popup_4f48f4c676e37f9df62bf8ae141b9f47)
+        ;
+
+        
+    
+    
+                marker_14e6dfc32e4debd90f9fa0f950c3a79d.setIcon(icon_692b68871e52f4d2e973e9076c4fb990);
+            
+    
+            var marker_615bb904d1786a59a1126d962e0c8c9d = L.marker(
+                [36.900370271, -76.3294942334],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_98e20bf37b97e9ee012aaea75993db58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fef94c200ef176a46455316ebbeb155a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8a711291b990a0b68c687e8995d8f96e = $(`<div id="html_8a711291b990a0b68c687e8995d8f96e" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-05</p>                 <a href="https://static.inaturalist.org/photos/483184583/medium.jpg" target = "_blank"><img src="https://static.inaturalist.org/photos/483184583/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_fef94c200ef176a46455316ebbeb155a.setContent(html_8a711291b990a0b68c687e8995d8f96e);
+            
+        
+
+        marker_615bb904d1786a59a1126d962e0c8c9d.bindPopup(popup_fef94c200ef176a46455316ebbeb155a)
+        ;
+
+        
+    
+    
+                marker_615bb904d1786a59a1126d962e0c8c9d.setIcon(icon_98e20bf37b97e9ee012aaea75993db58);
+            
+    
+            var marker_e078342a56dfcf9877d8878b55dfd0eb = L.marker(
+                [-29.285358018, 21.4108331387],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_1e49560fd624de4c06a1a1ad87b6069a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_571c83d762554596585261c47fd7e928 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_660556babd1c785c4f7d3f6cfd5e3fec = $(`<div id="html_660556babd1c785c4f7d3f6cfd5e3fec" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-04</p>                 <a href="https://www.inaturalist.org/assets/copyright-infringement-medium.png" target = "_blank"><img src="https://www.inaturalist.org/assets/copyright-infringement-medium.png"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_571c83d762554596585261c47fd7e928.setContent(html_660556babd1c785c4f7d3f6cfd5e3fec);
+            
+        
+
+        marker_e078342a56dfcf9877d8878b55dfd0eb.bindPopup(popup_571c83d762554596585261c47fd7e928)
+        ;
+
+        
+    
+    
+                marker_e078342a56dfcf9877d8878b55dfd0eb.setIcon(icon_1e49560fd624de4c06a1a1ad87b6069a);
+            
+    
+            var marker_7569e82f1bae9426d9fe481017cf91f0 = L.marker(
+                [-37.4654575965, 144.5938933155],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_1a9f2cd7b9be56379cf4d877b0c321c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35d79413fe59a93c0497a41fbea8e3b8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_22d87edca69d663e803dc91951606e1a = $(`<div id="html_22d87edca69d663e803dc91951606e1a" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Panthera leo</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-04</p>                 <a href="https://www.inaturalist.org/assets/copyright-infringement-medium.png" target = "_blank"><img src="https://www.inaturalist.org/assets/copyright-infringement-medium.png"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_35d79413fe59a93c0497a41fbea8e3b8.setContent(html_22d87edca69d663e803dc91951606e1a);
+            
+        
+
+        marker_7569e82f1bae9426d9fe481017cf91f0.bindPopup(popup_35d79413fe59a93c0497a41fbea8e3b8)
+        ;
+
+        
+    
+    
+                marker_7569e82f1bae9426d9fe481017cf91f0.setIcon(icon_1a9f2cd7b9be56379cf4d877b0c321c6);
+            
+    
+            var marker_96279bb635cf4c5babceba5d0846d67e = L.marker(
+                [47.407871596, 19.0984043535],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_a6320588825b71a5711eadcdc4ce5e5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_681679e8fe28b8710faff139ebadca3b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_50932c112bd9919c05a2361aca2192c3 = $(`<div id="html_50932c112bd9919c05a2361aca2192c3" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Roaring Cats</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-03</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/482501862/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/482501862/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_681679e8fe28b8710faff139ebadca3b.setContent(html_50932c112bd9919c05a2361aca2192c3);
+            
+        
+
+        marker_96279bb635cf4c5babceba5d0846d67e.bindPopup(popup_681679e8fe28b8710faff139ebadca3b)
+        ;
+
+        
+    
+    
+                marker_96279bb635cf4c5babceba5d0846d67e.setIcon(icon_a6320588825b71a5711eadcdc4ce5e5e);
+            
+    
+            var marker_c59022c1cd1ef93bb8e9a3df932ae6cf = L.marker(
+                [47.5575993766, 19.0949179991],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_7b4e31377d6cc45355c768abaeb8d64f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a67b2eb61ee699f9a13863d0787d6a48 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_815f5bcf41266f011355dd4fe0c8e103 = $(`<div id="html_815f5bcf41266f011355dd4fe0c8e103" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-03</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/482501515/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/482501515/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_a67b2eb61ee699f9a13863d0787d6a48.setContent(html_815f5bcf41266f011355dd4fe0c8e103);
+            
+        
+
+        marker_c59022c1cd1ef93bb8e9a3df932ae6cf.bindPopup(popup_a67b2eb61ee699f9a13863d0787d6a48)
+        ;
+
+        
+    
+    
+                marker_c59022c1cd1ef93bb8e9a3df932ae6cf.setIcon(icon_7b4e31377d6cc45355c768abaeb8d64f);
+            
+    
+            var marker_743854ab1e6d0be070739389a17180a7 = L.marker(
+                [-2.7100544488, 38.8586180289],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_ecd4f411cb91275249721ced0f33a2f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbc35191bb06342fe81edf244d81e0e8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69c02d469e4486486f101d7e28525e60 = $(`<div id="html_69c02d469e4486486f101d7e28525e60" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-03</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483375205/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483375205/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_bbc35191bb06342fe81edf244d81e0e8.setContent(html_69c02d469e4486486f101d7e28525e60);
+            
+        
+
+        marker_743854ab1e6d0be070739389a17180a7.bindPopup(popup_bbc35191bb06342fe81edf244d81e0e8)
+        ;
+
+        
+    
+    
+                marker_743854ab1e6d0be070739389a17180a7.setIcon(icon_ecd4f411cb91275249721ced0f33a2f9);
+            
+    
+            var marker_11d82bef01ba9e2d1d91528fcb73a912 = L.marker(
+                [-2.6024882245, 38.8675167611],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_1650d0cfb91aaffb673bd04491df474b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9cef1c8b53ff3a9c04312cfbf6a1c6e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b88b48a1c68451af4a7d1a301c8168dc = $(`<div id="html_b88b48a1c68451af4a7d1a301c8168dc" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-03</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483375352/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483375352/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_d9cef1c8b53ff3a9c04312cfbf6a1c6e.setContent(html_b88b48a1c68451af4a7d1a301c8168dc);
+            
+        
+
+        marker_11d82bef01ba9e2d1d91528fcb73a912.bindPopup(popup_d9cef1c8b53ff3a9c04312cfbf6a1c6e)
+        ;
+
+        
+    
+    
+                marker_11d82bef01ba9e2d1d91528fcb73a912.setIcon(icon_1650d0cfb91aaffb673bd04491df474b);
+            
+    
+            var marker_b6b9394a9b3ac0af0d427a59e8dc0ffa = L.marker(
+                [-24.3014804516, 31.3914616884],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_6b4a636c4bbf0d4924cb3c156ac81d0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a03be4c987c248759e50b758fd492c0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_638585a432ecf2aa2cbb69d6b322a638 = $(`<div id="html_638585a432ecf2aa2cbb69d6b322a638" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-03</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/482369109/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/482369109/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_2a03be4c987c248759e50b758fd492c0.setContent(html_638585a432ecf2aa2cbb69d6b322a638);
+            
+        
+
+        marker_b6b9394a9b3ac0af0d427a59e8dc0ffa.bindPopup(popup_2a03be4c987c248759e50b758fd492c0)
+        ;
+
+        
+    
+    
+                marker_b6b9394a9b3ac0af0d427a59e8dc0ffa.setIcon(icon_6b4a636c4bbf0d4924cb3c156ac81d0b);
+            
+    
+            var marker_9369531b440320617d0a0b82b1461c75 = L.marker(
+                [38.8329233088, -77.1701942421],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_59bde0dad7baf43093daf799b067bb4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1dc77142b85a9d7b47989511677a62c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0254d1b34358adafbb67ffa3ef9a795e = $(`<div id="html_0254d1b34358adafbb67ffa3ef9a795e" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-02</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/482201554/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/482201554/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_1dc77142b85a9d7b47989511677a62c9.setContent(html_0254d1b34358adafbb67ffa3ef9a795e);
+            
+        
+
+        marker_9369531b440320617d0a0b82b1461c75.bindPopup(popup_1dc77142b85a9d7b47989511677a62c9)
+        ;
+
+        
+    
+    
+                marker_9369531b440320617d0a0b82b1461c75.setIcon(icon_59bde0dad7baf43093daf799b067bb4a);
+            
+    
+            var marker_1005361c3b6b6f3c00e6f0425aba0932 = L.marker(
+                [-2.6260677541, 38.8402127895],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_8b429f034804f6a5ad13dd7ca91f4b74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4983e5f090b24acd6df0274536dc6b02 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_379fd13f9b2b7b06ea1eff4601c46853 = $(`<div id="html_379fd13f9b2b7b06ea1eff4601c46853" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-02</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483376320/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483376320/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_4983e5f090b24acd6df0274536dc6b02.setContent(html_379fd13f9b2b7b06ea1eff4601c46853);
+            
+        
+
+        marker_1005361c3b6b6f3c00e6f0425aba0932.bindPopup(popup_4983e5f090b24acd6df0274536dc6b02)
+        ;
+
+        
+    
+    
+                marker_1005361c3b6b6f3c00e6f0425aba0932.setIcon(icon_8b429f034804f6a5ad13dd7ca91f4b74);
+            
+    
+            var marker_50f0a4562f08e422f83d0f3e77cde06f = L.marker(
+                [29.448908506, 34.8821758941],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_511e271fd232ee71c6c64ac3206e2524 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aaeb747c25359912cd91ff6f064a65d0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b880825342b535fa3a20ab66d3ee16f = $(`<div id="html_2b880825342b535fa3a20ab66d3ee16f" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>אריה</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-02</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/482084358/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/482084358/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_aaeb747c25359912cd91ff6f064a65d0.setContent(html_2b880825342b535fa3a20ab66d3ee16f);
+            
+        
+
+        marker_50f0a4562f08e422f83d0f3e77cde06f.bindPopup(popup_aaeb747c25359912cd91ff6f064a65d0)
+        ;
+
+        
+    
+    
+                marker_50f0a4562f08e422f83d0f3e77cde06f.setIcon(icon_511e271fd232ee71c6c64ac3206e2524);
+            
+    
+            var marker_ce0da383463b79a1d9519b978d6241f4 = L.marker(
+                [-37.6704750671, 144.7534265487],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_57d5c6c78b03bb2d2ac3f04b3b3194d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cf69d7643265b3edc4ab5e8a4426434 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03ed62ba65ab0e32a21b48a7f3144903 = $(`<div id="html_03ed62ba65ab0e32a21b48a7f3144903" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-02</p>                 <a href="https://www.inaturalist.org/assets/copyright-infringement-medium.png" target = "_blank"><img src="https://www.inaturalist.org/assets/copyright-infringement-medium.png"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_3cf69d7643265b3edc4ab5e8a4426434.setContent(html_03ed62ba65ab0e32a21b48a7f3144903);
+            
+        
+
+        marker_ce0da383463b79a1d9519b978d6241f4.bindPopup(popup_3cf69d7643265b3edc4ab5e8a4426434)
+        ;
+
+        
+    
+    
+                marker_ce0da383463b79a1d9519b978d6241f4.setIcon(icon_57d5c6c78b03bb2d2ac3f04b3b3194d4);
+            
+    
+            var marker_85e6466982d0bdd635e96093633b26e9 = L.marker(
+                [-25.2197610449, 31.3185032971],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_c0921ae2d76fc06fd8cb7f322819d69b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c66b3a35e181f95f9b8412c22bd3f762 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ad71e22fa5b2d684b94b31f3b0411274 = $(`<div id="html_ad71e22fa5b2d684b94b31f3b0411274" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-02</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/482674171/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/482674171/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_c66b3a35e181f95f9b8412c22bd3f762.setContent(html_ad71e22fa5b2d684b94b31f3b0411274);
+            
+        
+
+        marker_85e6466982d0bdd635e96093633b26e9.bindPopup(popup_c66b3a35e181f95f9b8412c22bd3f762)
+        ;
+
+        
+    
+    
+                marker_85e6466982d0bdd635e96093633b26e9.setIcon(icon_c0921ae2d76fc06fd8cb7f322819d69b);
+            
+    
+            var marker_2ab9aab166cb1118129aa9601513ad96 = L.marker(
+                [-2.6732129387, 38.9894874443],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_615d2f11061e42ce5c25d392ec82aa35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb76a63e1248765c44f99f9543c0dae0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c987a2611d9eab83dadea9a468a95c7f = $(`<div id="html_c987a2611d9eab83dadea9a468a95c7f" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-01</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483525504/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483525504/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_cb76a63e1248765c44f99f9543c0dae0.setContent(html_c987a2611d9eab83dadea9a468a95c7f);
+            
+        
+
+        marker_2ab9aab166cb1118129aa9601513ad96.bindPopup(popup_cb76a63e1248765c44f99f9543c0dae0)
+        ;
+
+        
+    
+    
+                marker_2ab9aab166cb1118129aa9601513ad96.setIcon(icon_615d2f11061e42ce5c25d392ec82aa35);
+            
+    
+            var marker_a058d2269111b39a9dfd319d933ec235 = L.marker(
+                [-33.5703624542, 26.0697677203],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_bb8c6be8bac36469ed809fdd0e00b314 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_beba9dfb136e223bf4b8dd44feb17a80 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dea68493cb4182ac295f12901b85e291 = $(`<div id="html_dea68493cb4182ac295f12901b85e291" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-04-01</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483463956/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483463956/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_beba9dfb136e223bf4b8dd44feb17a80.setContent(html_dea68493cb4182ac295f12901b85e291);
+            
+        
+
+        marker_a058d2269111b39a9dfd319d933ec235.bindPopup(popup_beba9dfb136e223bf4b8dd44feb17a80)
+        ;
+
+        
+    
+    
+                marker_a058d2269111b39a9dfd319d933ec235.setIcon(icon_bb8c6be8bac36469ed809fdd0e00b314);
+            
+    
+            var marker_cf003c6a9b79c7cdd02b89723415bf42 = L.marker(
+                [36.6226801555, -119.915309489],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_9e01d58f4610f07a21afab494870ced8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24de9f9cc05d9f41b8c90fce6d88dca5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c9447b954289ac4c54d0c68dd8415931 = $(`<div id="html_c9447b954289ac4c54d0c68dd8415931" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-31</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/481624906/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/481624906/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_24de9f9cc05d9f41b8c90fce6d88dca5.setContent(html_c9447b954289ac4c54d0c68dd8415931);
+            
+        
+
+        marker_cf003c6a9b79c7cdd02b89723415bf42.bindPopup(popup_24de9f9cc05d9f41b8c90fce6d88dca5)
+        ;
+
+        
+    
+    
+                marker_cf003c6a9b79c7cdd02b89723415bf42.setIcon(icon_9e01d58f4610f07a21afab494870ced8);
+            
+    
+            var marker_5550bda4f10d6c6a02bdb4590ff9bfc5 = L.marker(
+                [-0.0995581076, 30.1787769115],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_eb2b5cfeb21df7007f1be5828f51d65b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d01deaad2496e6edfaeea5f957a826a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c916db0b484149b89c435ddfed31829a = $(`<div id="html_c916db0b484149b89c435ddfed31829a" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Northern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-31</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483558120/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483558120/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_8d01deaad2496e6edfaeea5f957a826a.setContent(html_c916db0b484149b89c435ddfed31829a);
+            
+        
+
+        marker_5550bda4f10d6c6a02bdb4590ff9bfc5.bindPopup(popup_8d01deaad2496e6edfaeea5f957a826a)
+        ;
+
+        
+    
+    
+                marker_5550bda4f10d6c6a02bdb4590ff9bfc5.setIcon(icon_eb2b5cfeb21df7007f1be5828f51d65b);
+            
+    
+            var marker_a79c485eec169de263497bfc5d5a63a9 = L.marker(
+                [-1.1732815218, 35.3127739542],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_c5239a501c9d98e6569c031bcd8993e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b266cd9f2620e02b7e3187f2b3946624 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8cd72606ab83bcfb2c615d7ff63253aa = $(`<div id="html_8cd72606ab83bcfb2c615d7ff63253aa" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-31</p>                 <a href="https://static.inaturalist.org/photos/482337270/medium.jpg" target = "_blank"><img src="https://static.inaturalist.org/photos/482337270/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_b266cd9f2620e02b7e3187f2b3946624.setContent(html_8cd72606ab83bcfb2c615d7ff63253aa);
+            
+        
+
+        marker_a79c485eec169de263497bfc5d5a63a9.bindPopup(popup_b266cd9f2620e02b7e3187f2b3946624)
+        ;
+
+        
+    
+    
+                marker_a79c485eec169de263497bfc5d5a63a9.setIcon(icon_c5239a501c9d98e6569c031bcd8993e9);
+            
+    
+            var marker_1da835ad6c91f4b6d4f5014b606ed793 = L.marker(
+                [-25.3259172507, 31.9203120613],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_461be1c5e73aa00f2317ab44171c7475 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb9928bb89b37895ff1a4336eac97d8a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8dde50da12dc5da6ad81ab65c4ab24ac = $(`<div id="html_8dde50da12dc5da6ad81ab65c4ab24ac" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-31</p>                 <a href="https://static.inaturalist.org/photos/481575048/medium.jpg" target = "_blank"><img src="https://static.inaturalist.org/photos/481575048/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_bb9928bb89b37895ff1a4336eac97d8a.setContent(html_8dde50da12dc5da6ad81ab65c4ab24ac);
+            
+        
+
+        marker_1da835ad6c91f4b6d4f5014b606ed793.bindPopup(popup_bb9928bb89b37895ff1a4336eac97d8a)
+        ;
+
+        
+    
+    
+                marker_1da835ad6c91f4b6d4f5014b606ed793.setIcon(icon_461be1c5e73aa00f2317ab44171c7475);
+            
+    
+            var marker_81c81cdb87bb025e7961ff67f3815a0f = L.marker(
+                [21.3210194344, 70.4970459717],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_db9f6704f5ace5d11b793ced8161ad81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd8bebffdcb509e33a7c4736dd20f7d8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_02bf0b06222423880da2cfeb0b38c17c = $(`<div id="html_02bf0b06222423880da2cfeb0b38c17c" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Northern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-31</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/481399033/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/481399033/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_dd8bebffdcb509e33a7c4736dd20f7d8.setContent(html_02bf0b06222423880da2cfeb0b38c17c);
+            
+        
+
+        marker_81c81cdb87bb025e7961ff67f3815a0f.bindPopup(popup_dd8bebffdcb509e33a7c4736dd20f7d8)
+        ;
+
+        
+    
+    
+                marker_81c81cdb87bb025e7961ff67f3815a0f.setIcon(icon_db9f6704f5ace5d11b793ced8161ad81);
+            
+    
+            var marker_4a856edd64eb54b06b8395f565cabf6b = L.marker(
+                [-1.1218650651, 35.3466994818],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_1e7b7813c2d19d121155614ab4744cd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_473e6ef6a69c6f00095423fbcab93890 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4ae82d2088023b6a445c4ad0b8dc8588 = $(`<div id="html_4ae82d2088023b6a445c4ad0b8dc8588" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-30</p>                 <a href="https://static.inaturalist.org/photos/482338195/medium.jpg" target = "_blank"><img src="https://static.inaturalist.org/photos/482338195/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_473e6ef6a69c6f00095423fbcab93890.setContent(html_4ae82d2088023b6a445c4ad0b8dc8588);
+            
+        
+
+        marker_4a856edd64eb54b06b8395f565cabf6b.bindPopup(popup_473e6ef6a69c6f00095423fbcab93890)
+        ;
+
+        
+    
+    
+                marker_4a856edd64eb54b06b8395f565cabf6b.setIcon(icon_1e7b7813c2d19d121155614ab4744cd6);
+            
+    
+            var marker_a4c22ee58e13be2367853258ff9cbe94 = L.marker(
+                [-25.3128071114, 20.9388065681],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_e5e589e5907e5651ce4c17879a02171b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_041421788fa9f1882878b4fff1fbe3d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_804996bf01cc316028e0e0f25a4007af = $(`<div id="html_804996bf01cc316028e0e0f25a4007af" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-30</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/481144624/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/481144624/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_041421788fa9f1882878b4fff1fbe3d3.setContent(html_804996bf01cc316028e0e0f25a4007af);
+            
+        
+
+        marker_a4c22ee58e13be2367853258ff9cbe94.bindPopup(popup_041421788fa9f1882878b4fff1fbe3d3)
+        ;
+
+        
+    
+    
+                marker_a4c22ee58e13be2367853258ff9cbe94.setIcon(icon_e5e589e5907e5651ce4c17879a02171b);
+            
+    
+            var marker_aa097340ce94e31a6e982b825d18fee3 = L.marker(
+                [-24.5741891405, 31.3778275413],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_0ac310c3551fd5f3245c245f78ce7088 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35c026ebfc17ed738c2439e53b0be228 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_305fce4a5b3d720620a82697b2931e23 = $(`<div id="html_305fce4a5b3d720620a82697b2931e23" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-30</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483127790/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483127790/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_35c026ebfc17ed738c2439e53b0be228.setContent(html_305fce4a5b3d720620a82697b2931e23);
+            
+        
+
+        marker_aa097340ce94e31a6e982b825d18fee3.bindPopup(popup_35c026ebfc17ed738c2439e53b0be228)
+        ;
+
+        
+    
+    
+                marker_aa097340ce94e31a6e982b825d18fee3.setIcon(icon_0ac310c3551fd5f3245c245f78ce7088);
+            
+    
+            var marker_1328fb48b99beb23a499884d5bcef509 = L.marker(
+                [31.4762580508, -97.0733896266],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_3e9422631b5dc04460270b545dbadd08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ac78844ec1103d3e387a765b23e61c2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51928a52061fb3791d5f414f364bde73 = $(`<div id="html_51928a52061fb3791d5f414f364bde73" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Panthera leo</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-29</p>                 <a href="https://static.inaturalist.org/photos/483159098/medium.jpg" target = "_blank"><img src="https://static.inaturalist.org/photos/483159098/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_7ac78844ec1103d3e387a765b23e61c2.setContent(html_51928a52061fb3791d5f414f364bde73);
+            
+        
+
+        marker_1328fb48b99beb23a499884d5bcef509.bindPopup(popup_7ac78844ec1103d3e387a765b23e61c2)
+        ;
+
+        
+    
+    
+                marker_1328fb48b99beb23a499884d5bcef509.setIcon(icon_3e9422631b5dc04460270b545dbadd08);
+            
+    
+            var marker_a4c9c7a531eff4ba9b7bff2c701121ca = L.marker(
+                [40.6970154106, -74.2795307007],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_1eea39162909230066d8a36c151ff2a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecb9a07ae7ce67d7a4a4795a8112a2f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6030c93cad2707c22f607c405f99d1f8 = $(`<div id="html_6030c93cad2707c22f607c405f99d1f8" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-29</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480906608/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480906608/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_ecb9a07ae7ce67d7a4a4795a8112a2f1.setContent(html_6030c93cad2707c22f607c405f99d1f8);
+            
+        
+
+        marker_a4c9c7a531eff4ba9b7bff2c701121ca.bindPopup(popup_ecb9a07ae7ce67d7a4a4795a8112a2f1)
+        ;
+
+        
+    
+    
+                marker_a4c9c7a531eff4ba9b7bff2c701121ca.setIcon(icon_1eea39162909230066d8a36c151ff2a4);
+            
+    
+            var marker_30f9a4ae767103ae0f4495a3ca745f57 = L.marker(
+                [-2.9213210101, 35.1657751632],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_8ed3bb0016c187ec6673f71159ccf15c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5f92481e570bee774a5636e76508cac = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a3c81cc2218be526bb62a067d3d17af5 = $(`<div id="html_a3c81cc2218be526bb62a067d3d17af5" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-29</p>                 <a href="https://static.inaturalist.org/photos/480700684/medium.jpeg" target = "_blank"><img src="https://static.inaturalist.org/photos/480700684/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_d5f92481e570bee774a5636e76508cac.setContent(html_a3c81cc2218be526bb62a067d3d17af5);
+            
+        
+
+        marker_30f9a4ae767103ae0f4495a3ca745f57.bindPopup(popup_d5f92481e570bee774a5636e76508cac)
+        ;
+
+        
+    
+    
+                marker_30f9a4ae767103ae0f4495a3ca745f57.setIcon(icon_8ed3bb0016c187ec6673f71159ccf15c);
+            
+    
+            var marker_926d503775dd7b7b078695d5b85d71c8 = L.marker(
+                [-12.0756334117, -75.0973045944],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_5a67491e856de75be28d42e3a2a4b95c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6484a7e5e0bdc7555f4157d09928d148 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0413482a259f4953f285dd2ae97bcbfd = $(`<div id="html_0413482a259f4953f285dd2ae97bcbfd" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>León</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-28</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480567698/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480567698/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_6484a7e5e0bdc7555f4157d09928d148.setContent(html_0413482a259f4953f285dd2ae97bcbfd);
+            
+        
+
+        marker_926d503775dd7b7b078695d5b85d71c8.bindPopup(popup_6484a7e5e0bdc7555f4157d09928d148)
+        ;
+
+        
+    
+    
+                marker_926d503775dd7b7b078695d5b85d71c8.setIcon(icon_5a67491e856de75be28d42e3a2a4b95c);
+            
+    
+            var marker_ae59b42507ee7bde7185009d54e1b1bf = L.marker(
+                [-12.1412934532, -75.0023824653],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_186901801750c1c056b3c4d70a60a7a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2a7c89bbe3e2b9c65e8276da67afb95 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_502eb25824f722992d343ba31f5ca531 = $(`<div id="html_502eb25824f722992d343ba31f5ca531" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>León</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-28</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480566838/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480566838/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_e2a7c89bbe3e2b9c65e8276da67afb95.setContent(html_502eb25824f722992d343ba31f5ca531);
+            
+        
+
+        marker_ae59b42507ee7bde7185009d54e1b1bf.bindPopup(popup_e2a7c89bbe3e2b9c65e8276da67afb95)
+        ;
+
+        
+    
+    
+                marker_ae59b42507ee7bde7185009d54e1b1bf.setIcon(icon_186901801750c1c056b3c4d70a60a7a5);
+            
+    
+            var marker_af5596452e1143139049a6330edb080c = L.marker(
+                [-24.8096946759, 31.4262589425],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_b4650ababa41029ed4692cbc3134a220 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd56244369851ced031f6ab6db31cb51 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_65a399764a4816e987e619276bcebb28 = $(`<div id="html_65a399764a4816e987e619276bcebb28" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-28</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480445943/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480445943/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_fd56244369851ced031f6ab6db31cb51.setContent(html_65a399764a4816e987e619276bcebb28);
+            
+        
+
+        marker_af5596452e1143139049a6330edb080c.bindPopup(popup_fd56244369851ced031f6ab6db31cb51)
+        ;
+
+        
+    
+    
+                marker_af5596452e1143139049a6330edb080c.setIcon(icon_b4650ababa41029ed4692cbc3134a220);
+            
+    
+            var marker_76422dd65ba0171b5bf6d48786331469 = L.marker(
+                [33.0546742983, -116.8951833978],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_e8710c7defb36535d0ce562d7bcc8436 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d52e415ed890af63fa009d48cdc2b4c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fec28cf7c1f611d27ddf2452456892d0 = $(`<div id="html_fec28cf7c1f611d27ddf2452456892d0" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-26</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480127209/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480127209/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_d52e415ed890af63fa009d48cdc2b4c9.setContent(html_fec28cf7c1f611d27ddf2452456892d0);
+            
+        
+
+        marker_76422dd65ba0171b5bf6d48786331469.bindPopup(popup_d52e415ed890af63fa009d48cdc2b4c9)
+        ;
+
+        
+    
+    
+                marker_76422dd65ba0171b5bf6d48786331469.setIcon(icon_e8710c7defb36535d0ce562d7bcc8436);
+            
+    
+            var marker_d8732935dec75133c22b779c1ecc849f = L.marker(
+                [31.2771133211, 34.6796560248],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_15e7ac1e05cb4cfbbb00582069b8bb01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7e1faecd492977d7c587eb659019cd5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c13ef679d5450ffd68c21e9f76770113 = $(`<div id="html_c13ef679d5450ffd68c21e9f76770113" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>אריה</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-26</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479902166/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479902166/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_c7e1faecd492977d7c587eb659019cd5.setContent(html_c13ef679d5450ffd68c21e9f76770113);
+            
+        
+
+        marker_d8732935dec75133c22b779c1ecc849f.bindPopup(popup_c7e1faecd492977d7c587eb659019cd5)
+        ;
+
+        
+    
+    
+                marker_d8732935dec75133c22b779c1ecc849f.setIcon(icon_15e7ac1e05cb4cfbbb00582069b8bb01);
+            
+    
+            var marker_4891ca25e4c71c732d4c1de3dfedd902 = L.marker(
+                [-1.5199242711, 35.1474317709],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_a23f7d6a930b43c6c8243449873bb696 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c773744e287134083d3c4f859bcdcb3e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_180f86a3b07deaf046a987aa6bee251d = $(`<div id="html_180f86a3b07deaf046a987aa6bee251d" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-25</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480405139/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480405139/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_c773744e287134083d3c4f859bcdcb3e.setContent(html_180f86a3b07deaf046a987aa6bee251d);
+            
+        
+
+        marker_4891ca25e4c71c732d4c1de3dfedd902.bindPopup(popup_c773744e287134083d3c4f859bcdcb3e)
+        ;
+
+        
+    
+    
+                marker_4891ca25e4c71c732d4c1de3dfedd902.setIcon(icon_a23f7d6a930b43c6c8243449873bb696);
+            
+    
+            var marker_bf1820fd84a119aab9047c261f7f40ae = L.marker(
+                [45.9579660076, 16.0517991487],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_0f0dbe4c1a8baeb6876c2eff6c280a7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6202e70bdbeb351727876fdd9ab2cae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aba2b62fff98323a8044b41adb6ba20e = $(`<div id="html_aba2b62fff98323a8044b41adb6ba20e" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-25</p>                 <a href="https://static.inaturalist.org/photos/479542131/medium.jpeg" target = "_blank"><img src="https://static.inaturalist.org/photos/479542131/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_d6202e70bdbeb351727876fdd9ab2cae.setContent(html_aba2b62fff98323a8044b41adb6ba20e);
+            
+        
+
+        marker_bf1820fd84a119aab9047c261f7f40ae.bindPopup(popup_d6202e70bdbeb351727876fdd9ab2cae)
+        ;
+
+        
+    
+    
+                marker_bf1820fd84a119aab9047c261f7f40ae.setIcon(icon_0f0dbe4c1a8baeb6876c2eff6c280a7a);
+            
+    
+            var marker_5dec0ece6964a195ba31c163b9e8f3be = L.marker(
+                [-24.4137825036, 31.9355831665],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_83293768840551d80944b528d95dd00d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64a535cf07d03de8e5a793f532f34c14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e9873a6abaf5891c5f408dddc822ecf7 = $(`<div id="html_e9873a6abaf5891c5f408dddc822ecf7" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-25</p>                 <a href="https://static.inaturalist.org/photos/479648984/medium.jpeg" target = "_blank"><img src="https://static.inaturalist.org/photos/479648984/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_64a535cf07d03de8e5a793f532f34c14.setContent(html_e9873a6abaf5891c5f408dddc822ecf7);
+            
+        
+
+        marker_5dec0ece6964a195ba31c163b9e8f3be.bindPopup(popup_64a535cf07d03de8e5a793f532f34c14)
+        ;
+
+        
+    
+    
+                marker_5dec0ece6964a195ba31c163b9e8f3be.setIcon(icon_83293768840551d80944b528d95dd00d);
+            
+    
+            var marker_0dc80fe7319cf082d2c84f94d4d2f212 = L.marker(
+                [-33.4026083845, 22.2606616828],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_ff937004d74bd075da119141b28db8ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abe106ec2b4bc4fdcbfd4946d22d9269 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3a8e4d3090c28c784169ad65aacc50c3 = $(`<div id="html_3a8e4d3090c28c784169ad65aacc50c3" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-24</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479828750/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479828750/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_abe106ec2b4bc4fdcbfd4946d22d9269.setContent(html_3a8e4d3090c28c784169ad65aacc50c3);
+            
+        
+
+        marker_0dc80fe7319cf082d2c84f94d4d2f212.bindPopup(popup_abe106ec2b4bc4fdcbfd4946d22d9269)
+        ;
+
+        
+    
+    
+                marker_0dc80fe7319cf082d2c84f94d4d2f212.setIcon(icon_ff937004d74bd075da119141b28db8ac);
+            
+    
+            var marker_9e3ccc58d7643c8556ee04ff32695755 = L.marker(
+                [-24.1228869243, 31.6238623924],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_8d298c9629bdbd7792a2d0b6f4d51fd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_faaaf65584d568d77b261b3adf4496d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8a20027e6cac2e1ce39a9682bf64e0b2 = $(`<div id="html_8a20027e6cac2e1ce39a9682bf64e0b2" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Kaplöwe</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-24</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479303581/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479303581/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_faaaf65584d568d77b261b3adf4496d4.setContent(html_8a20027e6cac2e1ce39a9682bf64e0b2);
+            
+        
+
+        marker_9e3ccc58d7643c8556ee04ff32695755.bindPopup(popup_faaaf65584d568d77b261b3adf4496d4)
+        ;
+
+        
+    
+    
+                marker_9e3ccc58d7643c8556ee04ff32695755.setIcon(icon_8d298c9629bdbd7792a2d0b6f4d51fd6);
+            
+    
+            var marker_fddfd1e88f3aca85e8aca5708a2247a4 = L.marker(
+                [-24.1240359504, 31.7797649665],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_a33f2696291c1191fdcd5439bbe6ed69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c589c5506ebed9d37f5813760d0839c0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cf24fba81017245cc7f1a123f93c3717 = $(`<div id="html_cf24fba81017245cc7f1a123f93c3717" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Kaplöwe</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-24</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479304137/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479304137/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_c589c5506ebed9d37f5813760d0839c0.setContent(html_cf24fba81017245cc7f1a123f93c3717);
+            
+        
+
+        marker_fddfd1e88f3aca85e8aca5708a2247a4.bindPopup(popup_c589c5506ebed9d37f5813760d0839c0)
+        ;
+
+        
+    
+    
+                marker_fddfd1e88f3aca85e8aca5708a2247a4.setIcon(icon_a33f2696291c1191fdcd5439bbe6ed69);
+            
+    
+            var marker_e240bd8855c2d0db57f75e5e79b25c52 = L.marker(
+                [-25.485095367, 31.5467387745],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_11a7ace59e4e85ba2d47b13f4ca54473 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f82b17507290625a52950087c4585f4f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f8cac7ee40a858dc52eb076ccca47dd5 = $(`<div id="html_f8cac7ee40a858dc52eb076ccca47dd5" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Massai-Löwe</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-23</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/483406549/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/483406549/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_f82b17507290625a52950087c4585f4f.setContent(html_f8cac7ee40a858dc52eb076ccca47dd5);
+            
+        
+
+        marker_e240bd8855c2d0db57f75e5e79b25c52.bindPopup(popup_f82b17507290625a52950087c4585f4f)
+        ;
+
+        
+    
+    
+                marker_e240bd8855c2d0db57f75e5e79b25c52.setIcon(icon_11a7ace59e4e85ba2d47b13f4ca54473);
+            
+    
+            var marker_da6eaa26b59d307573c975d2b52bc1b3 = L.marker(
+                [-1.4500245138, 35.0758143647],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_478a5397df4b3b522567b95758a6376d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd7f328a480eafa05b440b14078ba132 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_351bf86486bb056af2007d4c37ac7450 = $(`<div id="html_351bf86486bb056af2007d4c37ac7450" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-23</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479020795/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479020795/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_cd7f328a480eafa05b440b14078ba132.setContent(html_351bf86486bb056af2007d4c37ac7450);
+            
+        
+
+        marker_da6eaa26b59d307573c975d2b52bc1b3.bindPopup(popup_cd7f328a480eafa05b440b14078ba132)
+        ;
+
+        
+    
+    
+                marker_da6eaa26b59d307573c975d2b52bc1b3.setIcon(icon_478a5397df4b3b522567b95758a6376d);
+            
+    
+            var marker_ab3873f870b9d6c94741650e9c92cd9f = L.marker(
+                [-17.8891088246, 24.9016449258],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_d2e9623a685fd5c8d583c5a479d73217 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab753470090505b6265a372603c8edbe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2dfdc83dc0c070925ed9a3c2416d71f4 = $(`<div id="html_2dfdc83dc0c070925ed9a3c2416d71f4" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-23</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479303055/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479303055/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_ab753470090505b6265a372603c8edbe.setContent(html_2dfdc83dc0c070925ed9a3c2416d71f4);
+            
+        
+
+        marker_ab3873f870b9d6c94741650e9c92cd9f.bindPopup(popup_ab753470090505b6265a372603c8edbe)
+        ;
+
+        
+    
+    
+                marker_ab3873f870b9d6c94741650e9c92cd9f.setIcon(icon_d2e9623a685fd5c8d583c5a479d73217);
+            
+    
+            var marker_18d57b5f9fd9421960009dbc8014e7b4 = L.marker(
+                [-24.5421087122, 31.2925244624],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_eaf3977383d34525162d01c9e94a91b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bbee27d973c213f539a97ea5ee2a8d5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0d18063de1a62a89f6fce8e1fcaacac = $(`<div id="html_f0d18063de1a62a89f6fce8e1fcaacac" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Southern Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-23</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479292203/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479292203/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_1bbee27d973c213f539a97ea5ee2a8d5.setContent(html_f0d18063de1a62a89f6fce8e1fcaacac);
+            
+        
+
+        marker_18d57b5f9fd9421960009dbc8014e7b4.bindPopup(popup_1bbee27d973c213f539a97ea5ee2a8d5)
+        ;
+
+        
+    
+    
+                marker_18d57b5f9fd9421960009dbc8014e7b4.setIcon(icon_eaf3977383d34525162d01c9e94a91b7);
+            
+    
+            var marker_ce1b6992b7ee6f5e58875e30fac52818 = L.marker(
+                [-1.5982924225, 35.112912307],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_64fc7938c26831ccec3325defb7b5e23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79232026e3fee1ea8dc016ab128a7697 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_77e64a80300d291a271d60cc52b3ba6d = $(`<div id="html_77e64a80300d291a271d60cc52b3ba6d" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-23</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480405320/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480405320/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_79232026e3fee1ea8dc016ab128a7697.setContent(html_77e64a80300d291a271d60cc52b3ba6d);
+            
+        
+
+        marker_ce1b6992b7ee6f5e58875e30fac52818.bindPopup(popup_79232026e3fee1ea8dc016ab128a7697)
+        ;
+
+        
+    
+    
+                marker_ce1b6992b7ee6f5e58875e30fac52818.setIcon(icon_64fc7938c26831ccec3325defb7b5e23);
+            
+    
+            var marker_633fdc58ab2208a01cb274649443d590 = L.marker(
+                [-1.4091083399, 35.0935164106],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_105624c2e43ecf39b4ac5231e47cd432 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f178e449860084e3fb6150e0d18f3411 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4fbaad0ee812668ffc6010d34c8ddc1f = $(`<div id="html_4fbaad0ee812668ffc6010d34c8ddc1f" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-23</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480405344/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480405344/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_f178e449860084e3fb6150e0d18f3411.setContent(html_4fbaad0ee812668ffc6010d34c8ddc1f);
+            
+        
+
+        marker_633fdc58ab2208a01cb274649443d590.bindPopup(popup_f178e449860084e3fb6150e0d18f3411)
+        ;
+
+        
+    
+    
+                marker_633fdc58ab2208a01cb274649443d590.setIcon(icon_105624c2e43ecf39b4ac5231e47cd432);
+            
+    
+            var marker_e4106f97a6f75ebb8e7c89c14342f23b = L.marker(
+                [-1.4387861832, 35.0287747384],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_b2f4d2e0e42018fc32c38b6a1e3775ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_509e4bb566154d96681e03222002cb96 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_192b8205ebad2bae08a92ac5e482fc6a = $(`<div id="html_192b8205ebad2bae08a92ac5e482fc6a" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-23</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/480405456/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/480405456/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_509e4bb566154d96681e03222002cb96.setContent(html_192b8205ebad2bae08a92ac5e482fc6a);
+            
+        
+
+        marker_e4106f97a6f75ebb8e7c89c14342f23b.bindPopup(popup_509e4bb566154d96681e03222002cb96)
+        ;
+
+        
+    
+    
+                marker_e4106f97a6f75ebb8e7c89c14342f23b.setIcon(icon_b2f4d2e0e42018fc32c38b6a1e3775ea);
+            
+    
+            var marker_75d5fbb04a1a5a865333cd3544decd86 = L.marker(
+                [48.8143497715, 2.5420153563],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_578aaf236528236a1a0f4410dcb79dfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71224db8840677a6e3b70bd40795c531 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ff66e521636570a63056f7bf8ef36151 = $(`<div id="html_ff66e521636570a63056f7bf8ef36151" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-22</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/478559717/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/478559717/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_71224db8840677a6e3b70bd40795c531.setContent(html_ff66e521636570a63056f7bf8ef36151);
+            
+        
+
+        marker_75d5fbb04a1a5a865333cd3544decd86.bindPopup(popup_71224db8840677a6e3b70bd40795c531)
+        ;
+
+        
+    
+    
+                marker_75d5fbb04a1a5a865333cd3544decd86.setIcon(icon_578aaf236528236a1a0f4410dcb79dfa);
+            
+    
+            var marker_e9c3cc5bb13b06db191a636585096706 = L.marker(
+                [48.8921059106, 2.4386651797],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_c58a5b87c149d95dd369014105613333 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cb24a70da78e1bad8b50ed3a7a290f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b07b77dd8a3b1b4dfaa75aa59ef4d6de = $(`<div id="html_b07b77dd8a3b1b4dfaa75aa59ef4d6de" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion du Nord</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-22</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/478556156/medium.jpg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/478556156/medium.jpg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_7cb24a70da78e1bad8b50ed3a7a290f9.setContent(html_b07b77dd8a3b1b4dfaa75aa59ef4d6de);
+            
+        
+
+        marker_e9c3cc5bb13b06db191a636585096706.bindPopup(popup_7cb24a70da78e1bad8b50ed3a7a290f9)
+        ;
+
+        
+    
+    
+                marker_e9c3cc5bb13b06db191a636585096706.setIcon(icon_c58a5b87c149d95dd369014105613333);
+            
+    
+            var marker_09ca062111a6574c55967eafe3c2d639 = L.marker(
+                [-33.3626194081, 19.8176894551],
+                {
+}
+            ).addTo(map_7179d05157ab88461c2403c7afcacc89);
+        
+    
+            var icon_8e4342b36344ca3f51393bf4cb69d4e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de57161bbd26fb6deaf3149347baa34d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_604a8df5f189ac14a6ba2a5e6e19db78 = $(`<div id="html_604a8df5f189ac14a6ba2a5e6e19db78" style="width: 100.0%; height: 100.0%;">             <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>                 <h6 style = 'mb-5;'>Lion du Sud</h6>                 <p style = 'margin:0; font-size: 12px;'>Observed on: 2025-03-22</p>                 <a href="https://inaturalist-open-data.s3.amazonaws.com/photos/479331282/medium.jpeg" target = "_blank"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/479331282/medium.jpeg"width="150" style = "mt-5; border-radius: 6px;"></a>             </div></div>`)[0];
+                popup_de57161bbd26fb6deaf3149347baa34d.setContent(html_604a8df5f189ac14a6ba2a5e6e19db78);
+            
+        
+
+        marker_09ca062111a6574c55967eafe3c2d639.bindPopup(popup_de57161bbd26fb6deaf3149347baa34d)
+        ;
+
+        
+    
+    
+                marker_09ca062111a6574c55967eafe3c2d639.setIcon(icon_8e4342b36344ca3f51393bf4cb69d4e5);
+            
+</script>
+</html>

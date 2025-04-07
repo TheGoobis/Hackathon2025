@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset = "UTF-8">
     <title>Wildlife Sightings Visualizer</title>
     <!-- THIS IS USING Bootstrap CDN FOR THE UI -->
     <!-- So you can look at bootstrap tuts if you need to -->
     <!-- we also have a stylesheet to extend/override Boostrap styles! It is in the app/static folder, and a javascript file -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel = "stylesheet">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container my-5"> <!-- margin my-5 means margin on top AND bottom with 5 pixel spacing-->
-        <!-- the typography like mb-4 and stuff is related to the Bootstrap spacing system, btw if you need to look that up -->
-        <h1 class="mb-4 text-center"> Wildlife Sightings Visualizer</h1> <!-- margin bottom with 4 pixel spacing (mb-4) -->
+    <div class = "container">
+        <h1 class = "text-center"> Wildlife Sightings Visualizer</h1>
 
-        <!-- navigation tab buttons -->
-        <ul class="nav nav-tabs" id="mainTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <!-- search button for species -->
-                <button class="nav-link active" id="search-tab" data-bs-toggle="tab" data-bs-target="#search" type="button" role="tab">Search</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <!-- tab button for finding conservation information -->
-                <button class="nav-link" id="conservation-tab" data-bs-toggle="tab" data-bs-target="#conservation" type="button" role="tab">Conservation Info</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <!-- tab button for more information about endangered species -->
-                <button class="nav-link" id="endangered-tab" data-bs-toggle="tab" data-bs-target="#endangered" type="button" role="tab">Endangered Species</button>
-            </li>
-        </ul>
-
+        <!-- navigation tab buttons and elastic tabs -->
+        <div class = "wrapper text-center">
+            <ul class = "tabs" id="elastic-tabs">
+                <div class = "selector"></div>
+                <li><a href="#" class="active" data-target="search">Search</a></li>
+                <li><a href="#" data-target="conservation">Conservation Info</a></li>
+                <li><a href="#" data-target="endangered">Endangered Species</a></li>
+            </ul>
+        </div>
         <!-- tab content -->
-        <!-- 4 pixel margin at top of content -->
-        <div class="tab-content mt-4" id="mainTabsContent">
+        <div class = "tab-content mt-4">
             <!-- search tab -->
-            <div class="tab-pane fade show active" id="search" role="tabpanel">
+            <div class = "tab-pane active-tab" id = "search">
                 <!-- the map route form action -->
-                <form action="/map" method="post" class="row g-3" id="species-form">
-                    <div class="col-md-8"> <!-- medium column, takes 8 out of 12 rows (cause Bootstrap has 12 rows)-->
+                <form action = "/map" method = "post" class = "row g-3" id = "species-form">
+                    <div class = "col-md-8"> <!-- medium column, takes 8 out of 12 rows (cause Bootstrap has 12 rows)-->
                         <!-- actual search bar -->
                         <label for="species" class="form-label">Enter a species name:</label>
                         <input type="text" id="species" name="species_display" class="form-control" placeholder="e.g. Lion or Panthera leo" required>
@@ -48,20 +39,20 @@
                     </div>
                     <div class="col-md-4 d-flex align-items-end"> <!-- medium column that uses the last 4 rows out of the default 12 -->
                         <!-- submit button -->
-                        <button type="submit" class="btn btn-primary w-100">Search Sightings</button>
+                        <button type = "submit" class = "btn btn-primary w-100">Search Sightings</button>
                     </div>
                 </form>
             </div>
 
             <!-- conservation tab -->
-            <div class="tab-pane fade" id="conservation" role="tabpanel">
+            <div class="tab-pane" id="conservation">
                 <p>Can put relevant info about conservation efforts. Maybe links to charities or ways you can help or
                     why it is beneficial to us. Can get fancy with it, just do whatever.
                 </p>
             </div>
 
             <!-- endangered tab -->
-            <div class="tab-pane fade" id="endangered" role="tabpanel">
+            <div class="tab-pane" id="endangered">
                 <p>Put whatever you want in this tab. You can get fancy with it or change the tab if you want to something else as
                     long as its related to our project, I'm just using "endangered" for now as a placeholder.
                 </p>

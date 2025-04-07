@@ -13,7 +13,7 @@
 //     });
 // });
 
-//live drop-down for the autocomplete controller:
+//---------live drop-down for the autocomplete controller--------
 document.addEventListener("DOMContentLoaded", function () {
     const speciesInput = document.getElementById("species");
     const speciesSciInput = document.getElementById("species-sci");
@@ -63,4 +63,42 @@ document.addEventListener("DOMContentLoaded", function () {
             autocompleteList.style.display = "none";
         }
     });
+});
+
+//---------SCRIPTING FOR ELASTIC TAB ANIMATION------------
+document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelector(".tabs");
+    const selector = document.querySelector(".tabs .selector");
+    const tabLinks = document.querySelectorAll(".tabs a");
+
+    function moveSelector(activeEl) {
+        const itemPos = activeEl.offsetLeft;
+        const itemWidth = activeEl.offsetWidth;
+        selector.style.left = itemPos + "px";
+        selector.style.width = itemWidth + "px";
+    }
+
+    tabLinks.forEach(tab => {
+        tab.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            //remove active from all
+            tabLinks.forEach(t => t.classList.remove("active"));
+            //hide all tab panes
+            document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active-tab"));
+
+            //set active tab
+            this.classList.add("active");
+            const target = this.getAttribute("data-target");
+            document.getElementById(target).classList.add("active-tab");
+
+            moveSelector(this);
+        });
+    });
+
+    //initialize selector on page load
+    const activeTab = document.querySelector(".tabs a.active");
+    if (activeTab) {
+        moveSelector(activeTab);
+    }
 });
