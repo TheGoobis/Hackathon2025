@@ -30,14 +30,30 @@ def show_map():
     m = folium.Map(location=[first['lat'], first['lng']], zoom_start=4)
 
     for obs in observations:
-        popup = f"{obs['name']}<br>{obs['date']}"
-        if obs["photo"]:
-            popup += f"<br><img src='{obs['photo']}' width='100'>"
+        #the gathered info
+        name = obs["name"]
+        date = obs["date"]
+        photo = obs["photo"]
+        icon_type = obs["icon"]
+        icon_color = obs["color"]
+
+        #---------old popup code ---------
+        # popup = f"{obs['name']}<br>{obs['date']}"
+        # if obs["photo"]:
+        #     popup += f"<br><img src='{obs['photo']}' width='100'>"
+
+        #popup code to allow image enlargememt
+        popup_html = f"""
+            <div style = 'font-family: Arial, sans-serif; max-width: 200px;'>
+                <h6 style = 'mb-5;'>{name}</h6>
+                <p style = 'margin:0; font-size: 12px;'>Observed on: {date}</p>
+                {'<a href="' + photo + '" target = "_blank"><img src="' + photo + '"width="150" style = "mt-5; border-radius: 6px;"></a>' if photo else ''}
+            </div>"""
 
         folium.Marker(
             location=[obs['lat'], obs['lng']],
-            popup=popup
-        ).add_to(m)
+            popup=folium.Popup(popup_html, max_width= 250), icon = folium.Icon(color = icon_color, icon = icon_type, prefix = 'fa')
+        ).add_to(m) #add to map
 
     #save the map to an HTML file so you can pull it up in web app
     m.save("app/static/folium_map.html")
