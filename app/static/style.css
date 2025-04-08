@@ -105,7 +105,7 @@
    font-family: 'Raleway', sans-serif;
    text-align: center;
 }
-.conservation-head {
+.tab-header {
    font-size: 2em;
    color: #2c5034;
    border-bottom: 2px solid #4fa652;
@@ -150,6 +150,102 @@
 }
 
 /* -------- ENDANGERS TAB STYLINGS ----------*/
+.chart-section {
+   max-width: 800px;
+   margin: 40px auto;
+   padding: 10px;
+   text-align: center;
+}
+.species-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   margin-top: 30px;
+}
+.species-card {
+   background-color: #ffffff;
+   border-radius: 12px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   width: 280px;
+   padding: 20px;
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.species-card:hover {
+   transform: scale(1.03);
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.species-card img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+   border-radius: 8px;
+   margin-bottom: 15px;
+}
+.species-card h3 {
+   margin: 10px 0 5px;
+   font-size: 1.2rem;
+   color: #2c5034;
+}
+.species-card em {
+   color: #777;
+   font-size: 0.95rem;
+}
+.species-card .threat {
+   color: crimson;
+   font-weight: bold;
+   margin: 8px 0;
+}
+.species-card a {
+   display: inline-block;
+   margin-top: 12px;
+   color: #13ac11;
+   text-decoration: none;
+   font-weight: bold;
+}
+.species-card a:hover {
+   text-decoration: underline;
+}
+
+/*--------- HELP SECTION STYLING ---------*/
+.help-section {
+   max-width: 800px;
+   margin: 60px auto 40px auto;
+   padding: 30px;
+   background: #f1fdfb;
+   border-left: 6px solid #13ac11;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+   font-family: 'Raleway', sans-serif;
+}
+.help-section h2 {
+   color: #2c5034;
+   margin-bottom: 15px;
+   font-size: 1.8rem;
+}
+.help-section p {
+   font-size: 1.1rem;
+   color: #444;
+   margin-bottom: 20px;
+}
+.help-links {
+   list-style: none;
+   padding: 0;
+}
+.help-links li {
+   margin-bottom: 10px;
+   font-size: 1.05rem;
+}
+.help-links a {
+   text-decoration: none;
+   color: #13ac11;
+   font-weight: bold;
+}
+.help-links a:hover {
+   text-decoration: underline;
+   color: #1c91d5;
+}
 
 /* -------- MAP HTML STYLINGS ----------*/
 .map-container {

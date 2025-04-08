@@ -114,3 +114,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# CSV data
+LPD_2024_public.csv

@@ -102,3 +102,11 @@ document.addEventListener("DOMContentLoaded", function() {
         moveSelector(activeTab);
     }
 });
+
+//---------SCRIPTING FOR CHARTS------------
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof barData !== "undefined" && typeof lineData !== "undefined") {
+        Plotly.newPlot("biodiversity-chart", barData.data, barData.layout);
+        Plotly.newPlot("species-chart", lineData.data, lineData.layout);
+    }
+});

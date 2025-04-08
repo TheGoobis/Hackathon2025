@@ -10,6 +10,7 @@
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel = "stylesheet">
     <link rel = "stylesheet" href = "{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <div class = "container">
@@ -18,7 +19,7 @@
             <ul class = "tabs" id="elastic-tabs">
                 <div class = "selector"></div>
                 <li><a href="#" class="active" data-target="search">Search</a></li>
-                <li><a href="#" data-target="conservation">Conservation Info</a></li>
+                <li><a href="#" data-target="conservation">NC Conservation</a></li>
                 <li><a href="#" data-target="endangered">Endangered Species</a></li>
             </ul>
         </div>
@@ -56,7 +57,7 @@
 
             <!-- conservation tab -->
             <div class="tab-pane" id="conservation">
-                <h2 class = "conservation-head">Why Wildlife Conservation Matters</h2>
+                <h2 class = "tab-header">Why Wildlife Conservation Matters</h2>
                     <blockquote class = "info-block">
                         Wildlife conservation isn't just about protecting animals — it's about protecting the ecosystems that all life depends on, and that
                         includes us. Healthy environments ensure clean air and water, support biodiversity, and help combat climate change.
@@ -100,20 +101,83 @@
                     <p> Non-Profit  </p>
                 </div>
             </div>
-           
 
             <!-- endangered tab -->
             <div class="tab-pane" id="endangered">
-                <p>Put whatever you want in this tab. You can get fancy with it or change the tab if you want to something else as
-                    long as its related to our project, I'm just using "endangered" for now as a placeholder.
-                </p>
+                <h2 class = "tab-header">Endangered Species</h2>
+                    <blockquote class = "info-block">
+                        <strong>Endangered</strong> species are organisms that face a <strong>high risk</strong> of extinction due to rapid population decline or
+                        critical threats to their habitats. The International Union for Conservation of Nature (IUCN) classifies species by their risk level,
+                        from Least Concern to Critically Endangered. Biodiversity loss isn't just a wildlife issue — it affects ecosystems, food chains, medicine,
+                        climate, and ultimately the survival of humanity.
+                    </blockquote>
+                    <div class="chart-intro">
+                        <h2 class = "tab-header">Understanding Global Biodiversity Loss</h2>
+                        <blockquote class = "info-block">
+                            The charts below highlight the ongoing decline in biodiversity, showing trends in endangered species and global population indexes over time.
+                            These insights are based on datasets from the WWF, a key organization monitoring Earth's biodiversity health.
+                        </blockquote>
+                    </div>
+                    <div class = "chart-section">
+                        <div id="biodiversity-chart"></div>
+                        <div id="species-chart" style="margin-top: 60px;"></div>
+                    </div>
+
+                    <!-- some cards on endangered species I picked out just to look nice-->
+                    <h2 class="tab-header" style="text-align:center; margin-top: 60px;">Below are just a few examples of species on the Critically Endangered list</h2>
+                        <div class="species-cards">
+                            <div class="species-card">
+                                <img src="https://www.butlernature.com/wp-content/uploads/2024/11/vaquita-save-the-whales.jpg" alt="Vaquita">
+                                <h3>Vaquita</h3>
+                                <p><em>Phocoena sinus</em></p>
+                                <p class="threat"><i class="fa-solid fa-circle-exclamation" style = "color: red;"></i> Status: Critically Endangered</p>
+                                <p>Only around 10 individuals remain. Native to the northern Gulf of California, the vaquita is severely threatened by gillnet fishing.</p>
+                                <a href="https://en.wikipedia.org/wiki/Vaquita" target="_blank">Learn more<i class="fa-solid fa-arrow-right"></i></a></a>
+                            </div>
+                            <div class="species-card">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Rhinoceros_sondaicus_in_London_Zoo.jpg" alt="Javan rhinoceros">
+                                <h3>Javan Rhinoceros</h3>
+                                <p><em>Rhinoceros sondaicus</em></p>
+                                <p class="threat"><i class="fa-solid fa-circle-exclamation" style = "color: red;""></i> Status: Critically Endangered</p>
+                                <p>Fewer than 80 remain in the wild, all in Indonesia. They are at extreme risk due to habitat loss and poaching.</p>
+                                <a href="https://en.wikipedia.org/wiki/Javan_rhinoceros" target="_blank">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="species-card">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Eastern_lowland_gorilla.jpg/330px-Eastern_lowland_gorilla.jpg" alt="Eastern lowland gorilla">
+                                <h3>Eastern Lowland Gorilla</h3>
+                                <p><em>Gorilla beringei graueri</em></p>
+                                <p class="threat"><i class="fa-solid fa-circle-exclamation" style = "color: red;"></i> Status: Critically Endangered</p>
+                                <p>Found only in the Congo Basin. Their population has dropped by over 70% in 20 years due to civil unrest, hunting, and mining.</p>
+                                <a href = "https://en.wikipedia.org/wiki/Eastern_lowland_gorilla" target = "_blank">Learn more<i class="fa-solid fa-arrow-right"></i></a></a>
+                            </div>
+                        </div>
+                        <!--- HOW TO HELP SECTION -->
+                        <div class="help-section">
+                            <h2>How You Can Help</h2>
+                            <blockquote class = "info-block">
+                                Protecting endangered species isn't just about governments or scientists — everyone can make a difference.  
+                                Here are some reputable organizations doing important conservation work that you can support, share, or get involved with:
+                            </blockquote>
+                            <ul class="help-links">
+                                <h2><li><a href="https://www.worldwildlife.org" target="_blank">World Wildlife Fund (WWF)</a></li>
+                                <li><a href="https://www.iucn.org" target="_blank">International Union for Conservation of Nature (IUCN)</a></li>
+                                <li><a href="https://www.rainforesttrust.org" target="_blank">Rainforest Trust</a></li>
+                                <li><a href="https://www.conservation.org" target="_blank">Conservation International</a></li>
+                                <li><a href="https://onepercentfortheplanet.org" target="_blank">1% for the Planet</a></li></h2>
+                            </ul>
+                        </div>
             </div>
         </div>
     </div>
 
-    <!-- default Bootstrap JavaScript and our javascript file -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+    <script>
+        const barData = {{ bar_data | safe }};
+        const lineData = {{ line_data | safe }};
+    </script>
 
+    <!-- default Bootstrap JavaScript and our javascript file -->
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src = "{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

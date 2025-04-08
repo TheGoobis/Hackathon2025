@@ -1,15 +1,23 @@
-from flask import Blueprint, make_response, jsonify, render_template, request, redirect, url_for, flash
+from flask import Blueprint, jsonify, render_template, request
 from .controller import autocomplete_species #for the search bar
 from app.sightings import get_observations #the main iNaturalist API call function is here
 import folium #for maps
-
+#imports for graphs
+import json
 
 main = Blueprint('main', __name__, template_folder='templates') #just to make sure its getting the right template folder
 
 #the route for the map as a post request
 @main.route('/', methods=['GET'])
 def index():
-    return render_template("index.html")
+    #for chart 1
+    with open("app/static/avg_trend.json") as f:
+        bar_data = f.read()
+
+    #for chart 2
+    with open("app/static/species_trends.json") as f:
+        line_data = f.read()
+    return render_template("index.html", bar_data=bar_data, line_data=line_data)
 
 #the route for the map as a post request
 @main.route('/map', methods=['POST'])
